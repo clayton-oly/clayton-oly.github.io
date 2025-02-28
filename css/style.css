@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marmelad', sans-serif;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+    --clr-vanilla: #fbffcd;
+    --clr-sage: #79ae92;
+    --clr-teal: #1c5560;
+    --clr-midnight: #001f36;
+    --clr-ebony: #000000;
+    --clr-onyx: #101415;
+    --clr-slate: #21282a;
+    --clr-transparent: #ffffff00;
+}
+
+body {
+    background: #001F36;
+}
+
+.menu{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro{
+    text-align: center;
+}
+
+.containerProjects {
+    display: flex;
+}
+
+.projects {
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+}
