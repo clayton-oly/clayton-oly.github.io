@@ -28,6 +28,14 @@ header {
         background-color: black;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+    }
+
+    nav {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px
     }
 
     h1 {
@@ -40,7 +48,6 @@ header {
     }
 }
 
-
 .intro {
     text-align: center;
     display: flex;
@@ -48,6 +55,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
+    z-index: 2;
 
     & button {
         background-color: var(--clr-transparent);
@@ -57,9 +66,63 @@ header {
         border-radius: 12px;
         font-size: 20px;
         margin-top: 150px;
+        z-index: 2;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    h1 {
+        z-index: 2;
+    }
+
+    h2 {
+        z-index: 2;
     }
 }
 
+.containerProjectsA {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+
+    .projects {
+        margin: 30px;
+    }
+}
+
+#tools {
+    background-color: #79ae92;
+    height: 100vh;
+
+    & .containerTools {
+        display: flex;
+        background: rebeccapurple;
+        justify-content: space-evenly;
+
+        & .tooling {
+            background: rgb(28, 27, 30);
+            height: 300px;
+            width: 300px;
+        }
+
+
+        & .sobre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+
+            p {
+                border: 1px solid black;
+                border-radius: 20px;
+            }
+        }
+    }
+}
 
 #projetos {
     height: 90vh;
