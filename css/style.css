@@ -35,7 +35,16 @@ header {
         height: 50px;
         display: flex;
         align-items: center;
-        gap: 20px
+        gap: 20px;
+
+        & a {
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.3s;
+            }
+        }
     }
 
     h1 {
@@ -67,9 +76,11 @@ header {
         font-size: 20px;
         margin-top: 150px;
         z-index: 2;
+        transition: all 0.3s;
 
         &:hover {
             transform: scale(1.2);
+            transition: all 0.3s;
         }
     }
 
@@ -94,18 +105,27 @@ header {
 }
 
 #tools {
-    background-color: #79ae92;
-    height: 100vh;
 
     & .containerTools {
         display: flex;
-        background: rebeccapurple;
         justify-content: space-evenly;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
 
         & .tooling {
-            background: rgb(28, 27, 30);
             height: 300px;
             width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-size: 80px;
+                margin-bottom: 50px;
+            }
+
+            & .logoTools {}
         }
 
 
@@ -116,13 +136,56 @@ header {
             height: 300px;
             width: 300px;
 
+            h1 {
+                font-size: 80px;
+                margin-bottom: 50px;
+            }
+
             p {
+                text-align: center;
+                font-size: 20px;
                 border: 1px solid black;
                 border-radius: 20px;
             }
         }
     }
 }
+
+#experiencia {
+
+    & .containerXp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+
+        & h1 {
+            font-size: 80px;
+            margin-bottom: 50px;
+            color: var(--clr-vanilla);
+        }
+
+        & .xpDesc {
+            display: flex;
+            width: 800px;
+            justify-content: center;
+
+            & .cardUm {
+                border: 1px solid black;
+                margin-left: 50px;
+                border-radius: 20px;
+                text-align: left;
+                padding: 20px;
+
+                p {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+
 
 #projetos {
     height: 90vh;
@@ -155,6 +218,12 @@ header {
         font-size: 20px;
         margin-top: 50px;
         text-align: center;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.3s;
+        }
     }
 }
 
